@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>2 Column Layout &mdash; Left Menu with Header &amp; Footer</title>
+	<style type="text/css">
+		body {
+			margin:0;
+			padding:0;
+			font-family: 'Comic Sans MS', cursive;
+			line-height: 1.5em;
+            background-color: #eedbb1;
+            color: #262020;
+		}
+
+		#header {
+			background: #dea46f;
+			height: 75px;
+		}
+
+		#header h1 {
+			margin: 0;
+			padding-top: 15px;
+		}
+
+		main {
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			float: left;
+			width: 100%;
+		}
+
+		#nav {
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			float: left;
+			width: 230px;
+			margin-left: -100%;
+			background: #ba511b;
+		}
+
+		#footer {
+			clear: left;
+			width: 100%;
+			background: #dea46f;
+			text-align: center;
+			padding: 4px 0;
+		}
+
+		#wrapper {
+			overflow: hidden;
+		}
+
+		#content {
+			margin-left: 230px;
+		}
+
+		.innertube {
+			margin: 15px;
+			margin-top: 0;
+		}
+
+		p {
+			color: #5f3124;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+        ul li {
+	        color: #5f3124;
+        }
+
+
+		nav ul a {
+			color: #eda155;
+			text-decoration: none;
+		}
+
+        #nav ul a:hover {
+			text-decoration: wavy underline;
+		}
+
+		#language-switcher ul {
+			list-style: none;
+			display: flex;
+			gap: 10px;
+			margin: 0;
+			padding: 0;
+		}
+
+		#language-switcher a {
+			text-decoration: none;
+			color: #7d7048;
+			font-weight: bold;
+		}
+
+		#language-switcher a:hover {
+			text-decoration: wavy underline;
+		}
+	</style>
+</head>
+
+<body>		
+
+	<header id="header">
+		<div class="innertube" style="display: flex; justify-content: space-between; align-items: center;">
+			<h1 style="margin: 0;">Maria Eduarda Rodrigues Sampaio</h1>
+			<nav id="language-switcher">
+				<ul>
+					<li><a href="index.html">EN</a></li>
+					<li><a href="index-pt.html">PT</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="wrapper">
+		<main>
+			<div id="content">
+				<div class="innertube">
+					<h1>contact</h1>
+                    <p>if you want to offer me a job, please contact me through the email mrodriguessampaio[at]college[dot]harvard[dot]edu. otherwise, soumariduda[at]gmail[dot]com is the way to go.</p>
+                    <p>other ways we can stay in touch:</p>
+                    <ul>
+                        <li>you can send a postcard to my po box: 2233 Harvard Yard Mail Center. 01 Oxford Street. Cambridge, MA. 02138. United States of America</li>
+                        <li>you can get my number, but email a request first</li>
+                        <li>my discord is [insert discord here], but be warned i'm super inactive there</li>
+                    </ul> 
+				</div>
+			</div>
+		</main>
+
+		<nav id="nav">
+			<div class="innertube">
+				<h3>getting started</h3>
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="contact-en.html">contact</a></li>
+				</ul>
+                <h3>academics</h3>
+				<ul>
+					<li><a href="https://drive.google.com/file/d/1McW8TTA9hv9UObdIx5G7TAXJTXlelo0t/view?usp=sharing">cv</a></li>
+					<li><a href="https://www.linkedin.com/in/mrodriguessampaio/">linkedin</a></li>
+					<li><a href="#">lattes cv</a></li>
+				</ul>
+				<h3>life</h3>
+				<ul>
+					<li><a href="https://www.instagram.com/soumariduda/">instagram</a></li>
+                    <li><a href="https://soumariduda.substack.com/">substack</a></li>
+					<li><a href="#">youtube</a></li>
+					<li><a href="https://open.spotify.com/user/2tiua01giqwip635agzxplxl2?si=51d214a6e7054f4b">spotify</a></li>
+				</ul>
+				<h3>whimsy</h3>
+				<ul>
+					<li><a href="https://www.postcrossing.com/user/marieduarda">postcrossing</a></li>
+					<li><a href="#">pics</a></li>
+					<li><a href="#">favs and misc</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<footer id="footer">
+		<div class="innertube">
+			<p id="randomSentence"></p>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		var bodyText = [
+			"as coisas que não tem nome são mais pronunciadas por crianças",
+			"ao lado de um pardal o dia dorme antes",
+			"por dentro de nossa casa passava um rio inventado. tudo que não invento é falso",
+            "eu escuto a cor dos passarinhos"
+		];
+
+		function displayFooterSentence() {
+			var sentence = bodyText[Math.floor(Math.random() * bodyText.length)];
+			document.getElementById("randomSentence").innerHTML = sentence;
+		}
+
+		window.onload = displayFooterSentence;
+	</script>
+
+</body>
+</html>
